@@ -4,41 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SASbelt</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .title {
-            font-size: 30px;
-            font-weight: bold;
-        }
-        .logo {
-            width: 100px;
-            height: auto;
-        }
-        .description {
-            margin-top: 20px;
-        }
-        .download-link {
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Lien vers le favicon -->
 </head>
 <body>
-    <img src="images/llbOrphee.png" alt="SASbelt" class="logo">
-    <div class="description" style="text-align: center;">
-    <h1 class="title">SASbelt</h1>
-    </div>
-    
-    <div class="description" style="text-align: center;">
-        <p>SASbelt is a python program developed by G. Exil and K. Wimalan (Laboratoire Léon-Brillouin, Saclay, France)</p>
-        <p>from the MemProt program developed by J. Perez and A. Koutsioubas (Act Cryst D71:86, 2015).</p>
-        <p>This program models the low resolution shape of the amphiphilic belt of a membrane protein</p>
-        <p>using SAXS experimental data of the belt/protein complex and a PDB file of the membrane protein structure.</p>
-
-    </div>
-    <div class="download-link" style="text-align: center;">
-        <a href="https://sdrive.cnrs.fr/s/ePfsz9bd2XbBPS5">Download Sasbelt</a>
-    </div>
+    <header>
+        <div class="header-content">
+            <img src="logo_sasbelt.png" alt="SASbelt Logo">
+            <div class="title-authors">
+                <h1>SASbelt</h1>
+                <p class="authors">S. Combet, G. Exil, K. Wimalan</p>
+            </div>
+        </div>
+    </header>
+    <section id="description">
+        <h2>About SASbelt</h2>
+        <p>SASbelt is a Python program developed by <b>G. Exil</b> and <b>K. Wimalan</b>, under the supervision of <b>S. Combet</b>, at the Laboratoire Léon-Brillouin (Saclay, France), building on the MemProt program written by <b>J. Perez</b> and <b>A. Koutsioumpas</b> <a href="https://journals.iucr.org/d/issues/2015/01/00/ba5222/index.html">(Cryst D71:86, 2015,
+            doi:10.1107/S1399004714016678)</a>.
+             
+            The program models the low-resolution shape of the amphiphilic belt surrounding a membrane protein, using SAXS experimental data of the belt/protein complex along with a PDB file of the membrane protein structure.
+            </p>
+            <div class="image-grid">
+                <figure>
+                    <a href="screenshot1.png"><img src="screenshot1.png" alt="SASbelt Screenshot 1"></a>
+                    <figcaption align="center">Main interface</figcaption>
+                </figure>
+                <figure>
+                    <a href="screenshot2.png"><img src="screenshot2.png" alt="SASbelt Screenshot 2"></a>
+                    <figcaption align="center">Web visualization interface</figcaption>
+                </figure>
+                <figure>
+                    <a href="screenshot3.png"><img src="screenshot3.png" alt="SASbelt Screenshot 3"></a>
+                    <figcaption align="center">Interface for Orientations of Proteins in Membranes </figcaption>
+                </figure>
+                
+            </div>
+    </section>
+    <section id="installation">
+        <h2>Installation Protocol</h2>
+        <p>To install SASbelt, follow these steps:</p>
+        <ul>
+            <li>MS Windows (10, 11)</li>
+                <ul>    
+                    <li>Prerequisites for SASbelt installation</li>
+                    <ul>
+                        <li>Install ATSAS version 2.4.1, <a href="https://www.embl-hamburg.de/biosaxs/download.html">ATSAS</a></li>
+                        <li>Install MiKTeX, <a href="https://miktex.org/download">MiKTeX</a></li>
+                        <li>Install Perl for MS Windows, <a href="https://strawberryperl.com/">Strawberry Perl</a></li>
+                    </ul>
+                </ul>
+            </li>    
+                <ul>
+                    <li>Download and install the SASbelt installer, <a href="https://sdrive.cnrs.fr/s/gGx6maWGS2kKJ6r">SASbelt</a> </li>
+                </ul>
+                
+        </ul>
+        
+    </section>
+    <section id="manual">
+        <h2>User Manual</h2>
+        <a href="https://github.com/your-repo/SASbelt/manual.pdf">SASbelt User Manual</a>
+    </section>
+    <section id="authors">
+        <h2>Authors</h2>
+        <p>Developed by  <b>Gaston Emmanuel Exil</b>, <b> Sophie Combet</b> and <b>Krushika Wimalan</b>.</p>
+    </section>
+    <section id="references">
+        <h2>References</h2>
+        <ul>
+            <li>Author A, Author B. Title of the paper. Journal Name, Year.</li>
+            <li>Author C, Author D. Title of another paper. Another Journal, Year.</li>
+        </ul>
+    </section>
+    <section id="license">
+        <h2>License</h2>
+        <p>SASbelt is distributed under the <strong>EUPL-1.2</strong> License. See the <a href="https://joinup.ec.europa.eu/sites/default/files/custom-page/attachment/2020-03/EUPL-1.2%20EN.txt">LICENSE</a> file for more details.</p>
+    </section>
 </body>
 </html>
