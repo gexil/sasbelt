@@ -6,9 +6,11 @@
     <title>SASbelt</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Lien vers le favicon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <div style="background-color: yellow; text-align: center; padding: 10px;">
+        <!-- <img src="workinprogress.png"  width="2%" height="2%" alt="Work in progress"/><strong>Work in progress</strong><img src="workinprogress.png"  width="2%" height="2%" alt="Work in progress"/> -->
         <strong>Work in progress</strong>
     </div>
     <header>
@@ -19,30 +21,30 @@
                 <h1>SASbelt</h1>
                 <p class="authors">S. Combet, G. Exil, K. Wimalan</p>
             </div>
-            <img src="llbOrphee.png" width="100" height="100" alt="LLB Logo">
-            <img src="LOGO_CNRS_BLEU.png" width="100" height="100" alt="CNRS Logo">
-            <img src="logo-cea.jpg" width="100" height="100" alt="CEA Logo">
-            <img src="logo_Universite_Paris-Saclay.png" width="100" height="100" alt="Université Paris Saclay Logo">
+            <img src="llbOrphee.png" width="100" height="100" alt="LLB Logo"/>
+            <img src="LOGO_CNRS_BLEU.png" width="100" height="100" alt="CNRS Logo"/>
+            <img src="logo-cea.jpg" width="100" height="100" alt="CEA Logo"/>
+            <img src="logo_Universite_Paris-Saclay.png" width="100" height="100" alt="Université Paris Saclay Logo"/>
         </div>
     </header>
     <section id="description">
         <h2>About SASbelt</h2>
-        <p>SASbelt is a Python program developed by <b>G. Exil</b> and <b>K. Wimalan</b>, under the supervision of <b>S. Combet</b>, at the Laboratoire Léon-Brillouin (Saclay, France), building on the MemProt program written by <b>J. Perez</b> and <b>A. Koutsioumpas</b> <a href="https://journals.iucr.org/d/issues/2015/01/00/ba5222/index.html">(Cryst D71:86, 2015,
+        <p>SASbelt is a Python program developed by <b>G. Exil</b> and <b>K. Wimalan</b>, under the supervision of <b>S. Combet</b>, at the Laboratoire Léon-Brillouin (Saclay, France), building on the MemProt program written by <b>J. Perez</b> and <b>A. Koutsioubas</b> <a href="https://journals.iucr.org/d/issues/2015/01/00/ba5222/index.html">(Cryst D71:86, 2015,
             doi:10.1107/S1399004714016678)</a>.
              
             The program models the low-resolution shape of the amphiphilic belt surrounding a membrane protein, using SAXS experimental data of the belt/protein complex along with a PDB file of the membrane protein structure.
             </p>
             <div class="image-grid">
                 <figure>
-                    <a href="screenshot1.png"><img src="screenshot1.png"  alt="SASbelt Screenshot 1"></a>
+                    <a href="screenshot1.png"><img src="screenshot1.png"  alt="SASbelt Screenshot 1"/></a>
                     <figcaption >Main interface</figcaption>
                 </figure>
                 <figure>
-                    <a href="screenshot2.png"><img src="screenshot2.png" alt="SASbelt Screenshot 2"></a>
+                    <a href="screenshot2.png"><img src="screenshot2.png" alt="SASbelt Screenshot 2"/></a>
                     <figcaption>Web visualization interface</figcaption>
                 </figure>
                 <figure>
-                    <a href="screenshot3.png"><img src="screenshot3.png" alt="SASbelt Screenshot 3"></a>
+                    <a href="screenshot3.png"><img src="screenshot3.png" alt="SASbelt Screenshot 3"/></a>
                     <figcaption>Interface for Orientations of Proteins in Membranes </figcaption>
                 </figure>
                 
@@ -56,10 +58,20 @@
                 <ul>    
                     <li>Prerequisites for SASbelt installation</li>
                     <ul>
-                        <li>Install ATSAS version 2.4.1, <a href="https://www.embl-hamburg.de/biosaxs/download.html">ATSAS</a></li>
+                        <li>Install ATSAS version 2.4.1.
+                            <ul>
+                                <li>
+                                    <span class="material-icons">warning</span><font  style="color:hsla(0,100%,50%,1);">Please download only this version number of the ATSAS suite</font><span class="material-icons">warning</span>. 
+                                    <li>Indeed, SASbelt uses the crysol program, in this version only !</li>
+                                    <li>Take the correct version by clicking on <a href="https://www.embl-hamburg.de/biosaxs/atsas-online/login.php?location=download.php">Academic ATSAS download</a></li></b></li>
+                                </li>
+
+                                
+                            </ul>
+
                         <li>Install MiKTeX, <a href="https://miktex.org/download">MiKTeX</a></li>
                         <ul>
-                            <li>Once Miktex installation is complete, you will need to open a windows command console, and run the following command line: "<i>miktex package update</i>" to install the qt plugin needed for MikTex</li>
+                            <li><font  style="color:hsla(0,100%,50%,1);">Once Miktex installation is complete, you will need to open a windows command console, and run the following command line: "<i>miktex package update</i>" to install the qt plugin needed for MikTex</font></li>
                         </ul>
                         <li>Install Perl for MS Windows, <a href="https://strawberryperl.com/">Strawberry Perl</a></li>
                     </ul>
@@ -83,7 +95,7 @@
     <section id="references">
         <h2>References</h2>
         <ul>
-            <li><b>Javier Péreza</b>,  <b>Alexandros Koutsioumpas</b>. Memprot: a program to model the detergent corona around a membrane protein based on SEC–SAXS data<a href="https://journals.iucr.org/d/issues/2015/01/00/ba5222/index.html">(Cryst D71:86, 2015,
+            <li><b>Javier Pérez</b>,  <b>Alexandros Koutsioubas</b>. Memprot: a program to model the detergent corona around a membrane protein based on SEC–SAXS data<a href="https://journals.iucr.org/d/issues/2015/01/00/ba5222/index.html">(Cryst D71:86, 2015,
                 doi:10.1107/S1399004714016678)</a></li>
         </ul>
     </section>
